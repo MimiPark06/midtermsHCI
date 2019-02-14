@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title> WELCOME, LOGIN/ SIGNUP </title>
+ 
+ <style>
+ body {
+  background-image: url("../midtermsHCI/bg2.gif");
+  background-position: 1%;
+  background-repeat: no-repeat;
+  background-size: 1360px 960px;
+}
+form{
+  align-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body >
+
+  <div class="container">
+    <div class="row">
+      <div class=" col-lg-12 col-xs-12 col-md-12">
+<form action="#id01"  style="background-color: black; opacity:0.5; color: white;"  >
+        <div>
+            <label>
+            <marquee><h1>SIGN UP</h1></marquee>
+            <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;  align-content: center;">Login</button>
+           </label>
+          </div>
+
+</form >
+
+          <div id="id01" class="modal">
+
+            <form class="modal-content animate"  style="background-color: black; color: white;">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+
+          
+               
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="Username" name="uname"  required >
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+                 <p class="Message">Not Registered? <a href="#register-form">Register</a></p>
+                <button type="submit" name="login_user">Login</button>
+
+            
+
+            </form>
+            <form class="register-form resgister-form-col-xs-12 col-lg-12 col-md-12 w-100 modal-content animate" style="background-color: black; color: white;" id="register-form">
+        
+               
+                 <label for="uname"><b>USERNAME</b></label>
+        <input type="text" class="form-control  form-control-lg" placeholder="Username">
+         <label for="uname"><b>PASSWORD</b></label>
+        <input type="password" class="form-control  form-control-lg" placeholder="Password">
+         <label for="uname"><b>EMAIL</b></label>
+        <input type="text" class="form-control  form-control-lg" placeholder="Email ID">
+        <button class="Message" >Create</button>
+    
+        </form>  
+    </div>
+
+          </div>
+
+        </div>
+</div>
+</div>
+
+</script>
+
+ <script>
+        $('.Message ').click(function(){
+        $('.register-form').animate({height: "toggle", opacity: "toggle"}, "slow");    
+        });
+        </script>
+
+       
+</body>
+<footer>
+
+        <p>&copy; Copyright 2019</p>
+    </footer>
+</html>
